@@ -57,3 +57,15 @@ function checkPasswords() {
         document.getElementById("pwd2Msg").innerHTML = "";
     }
 }
+
+function showPhoneHelp() {
+    document.getElementById("phoneHelp").innerHTML = "Enter 10 digits, for example 0501234567";
+}
+
+function hidePhoneHelp() {
+    document.getElementById("phoneHelp").innerHTML = "";
+}
+
+function formCleared() {
+    alert("The form was cleared.");
+}
