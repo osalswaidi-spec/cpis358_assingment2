@@ -41,3 +41,19 @@ function validateSignup() {
         f.submit();
     }
 }
+
+function checkEmpty(fieldName, msgId) {
+    if (document.signupForm[fieldName].value == "") {
+        document.getElementById(msgId).innerHTML = "This field cannot be empty.";
+    } else {
+        document.getElementById(msgId).innerHTML = "";
+    }
+}
+
+function checkPasswords() {
+    if (document.signupForm.pwd.value != document.signupForm.pwd2.value) {
+        document.getElementById("pwd2Msg").innerHTML = "The two passwords do not match.";
+    } else {
+        document.getElementById("pwd2Msg").innerHTML = "";
+    }
+}
